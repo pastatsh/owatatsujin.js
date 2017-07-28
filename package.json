@@ -1,4 +1,10 @@
 {
+  "name": "owatatsujin.js",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {},
+  "author": "pasta-soft",
+  "license": "",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-concat": "^1.0.1",
