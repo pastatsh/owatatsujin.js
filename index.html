@@ -1,5 +1,32 @@
-<meta charset="utf-8">
-<body style="margin:0">
-<script src="phaser.min.js"></script>
-<script src="owata.min.js"></script>
+<!-- 譜面を公開する人が書くことになる HTML のテスト -->
+<!--
+
+- 必要なファイル
+
+├─ index.html
+├─ owata.js
+├─ ~~~.mp3 ( wav, ogg など )
+├─ ~~~.txt
+├─ // dong.mp3 // 打音など、必須のリソースは
+├─ // ka.mp3   // webpack で owata.js に組み込んだ方がよさそう
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+
+    <!-- canvas を展開する要素 -->
+    <div id="owata" width="800" height="600"></div>
+
+    <script src="owata.js" data-target="#owata" data-bgm="bgm.mp3" data-data="data.txt"></script>
+
 </body>
+
+</html>

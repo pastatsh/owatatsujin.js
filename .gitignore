@@ -1,4 +1,5 @@
 node_modules
 *.mp3
+data.txt
 owata.js
 owata.min.js
