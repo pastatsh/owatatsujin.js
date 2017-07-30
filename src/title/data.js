@@ -1,4 +1,4 @@
-function Data(str) {
+var Data = module.exports = function(str) {
 	var self = this;
 	str.replace(/\r?\n/g, '').split('&').forEach(function(tmp) {
 		var i = tmp.indexOf('=');
@@ -43,12 +43,12 @@ Data.prototype.analyze = function(name) {
 	while(c = seq.shift()) {
 		if(c == "1" || c == "3") {
 			notes.push({
-				type: Input.DON,
+				type: Const.DON,
 				time: time
 			});
 		} else if(c == "2" || c == "4") {
 			notes.push({
-				type: Input.KA,
+				type: Const.KA,
 				time: time
 			});
 		} else if(c == ",") {
